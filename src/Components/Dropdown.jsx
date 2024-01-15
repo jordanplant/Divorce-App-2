@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import styles from "../styles/form.module.css";
+//STYLES ARE IN FORM.MODULE.CSS
 
 const Dropdown = ({ onEmojiChange }) => {
   const [emojis, setEmojis] = useState([]);
@@ -34,16 +36,16 @@ const Dropdown = ({ onEmojiChange }) => {
 
     if (emoji) {
       setSelectedEmoji(emoji.character);
-      onEmojiChange(emoji.character); // Call the callback with the selected emoji
+      onEmojiChange(emoji.character);
     }
   };
 
   return (
-    <select className="emoji-dropdown" onChange={handleEmojiSelection}>
+    <select className={styles.emojiDropdown} onChange={handleEmojiSelection}>
       <option value="">Select Emoji</option>
       {emojis.map((emoji, index) => (
         <option key={index} value={emoji.slug}>
-          {emoji.character} {emoji.unicodeName}
+          {emoji.character}
         </option>
       ))}
     </select>

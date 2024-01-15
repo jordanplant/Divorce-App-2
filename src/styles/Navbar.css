@@ -3,7 +3,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #A3F4FB;
+  background-color: rgb(47, 181, 192);
   align-items: center;
   padding: 0.5em;
   margin-bottom: 0.5em;
@@ -80,7 +80,7 @@
 }
 
 .user-image {
-  border: 2px solid white;
+  border: 2px solid  rgb(47, 181, 192);
   height: 5em;
   width: 5em;
   margin-left: 50%;
@@ -96,5 +96,5 @@
 
 .username,
 .log-out {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(47, 181, 192)
 }

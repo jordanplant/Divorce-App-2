@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.box {
+    flex: 0 1 calc(25% - 10px);
+    background-color: rgb(135, 246, 255); 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.inside-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+

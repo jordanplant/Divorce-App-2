@@ -1,42 +1,44 @@
 import React from "react";
+import "../styles/months.css"
+
 function Months() {
   return (
-    <div>
-      <div>
-        <p>January</p>
+    <div className="container">
+      <div className="box">
+        <p className="inside-box">January</p>
       </div>
-      <div>
+      <div className="box">
         <p>February</p>
       </div>
-      <div>
+      <div className="box">
         <p>March</p>
       </div>
-      <div>
+      <div className="box">
         <p>April</p>
       </div>
-      <div>
+      <div className="box">
         <p>May</p>
       </div>
-      <div>
+      <div className="box">
         <p>June</p>
       </div>
-      <div>
+      <div className="box">
         <p>July</p>
       </div>
-      <div>
+      <div className="box">
         <p>August</p>
       </div>
-      <div>
+      <div className="box">
         <p>September</p>
       </div>
-      <div>
+      <div className="box">
         <p>October</p>
       </div>
-      <div>
+      <div className="box">
         <p>November</p>
       </div>
-      <div>
-        <p>Decemberfsdfsdfsdf</p>
+      <div className="box">
+        <p>December</p>
       </div>
     </div>
   );

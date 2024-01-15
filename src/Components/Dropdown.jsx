@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "../styles/form.module.css";
+import styles from "../styles/Form.module.css";
 //STYLES ARE IN FORM.MODULE.CSS
 
 const Dropdown = ({ onEmojiChange }) => {

@@ -1,0 +1,78 @@
+  /* N A V I G A T I O N      M E N U */
+  .nav-menu {
+    cursor: pointer;
+    justify-self: flex-start;
+    padding: 0.25rem 0.75rem;
+    margin-left: 2rem;
+    margin-top: 0.5em;
+  }
+  
+  .user-dropdown {
+    border: 1px solid transparent;
+  }
+  
+    .user-dropdown-img {
+    height: 24px;
+    fill: white;
+    cursor: pointer;
+    padding: 0 12px;
+    margin-top: 0.5em;
+  }
+  
+  /* DROPDOWN TOGGLING FUNCTIONALITY */
+  /* Nav toggle section */
+  .toggle-button,
+  .sub-toggle-button {
+    user-select: none;
+  }
+  
+  /* TOGGLE CHECK DEBUG Uncomment to see checkmarks */
+  .toggle-input {
+    display: none;
+  }
+  
+  .toggled-content {
+    display: none;
+  }
+  
+  #user-toggler:checked ~ .user-toggled-content {
+    display: block;
+  }
+  
+  /* USER DROPDOWN */
+  .user-dropdown-link {
+    margin-bottom: 0;
+    color: var(--midgrey);
+    font-weight: 700;
+  }
+  
+  /* User Dropdown Content */
+  .user-toggled-content {
+    position: absolute;
+    background: white;
+    border-radius: 2px;
+    min-width: 236px;
+    /* transform: translateX(-82%); */
+    /* top: 90%; */
+    box-shadow: 0 2px 2px 0 var(--borderboxshadow1),
+      0 1px 4px 0 var(--borderboxshadow2);
+  }
+  
+  /* User Dropdown Links */
+  .user-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-dropdown-link {
+    padding: 8px 16px 8px 24px;
+    font-weight: 400;
+  }
+  
+  .messages,
+  .backgrounds,
+  .achievements,
+  .subscription,
+  .log-out {
+    border-bottom: 1px solid var(--verylightgrey);
+  }

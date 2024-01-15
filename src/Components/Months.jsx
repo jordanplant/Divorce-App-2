@@ -1,44 +1,98 @@
 import React from "react";
 import "../styles/months.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { faPen } from "@fortawesome/free-solid-svg-icons";
+
+
+
 
 function Months() {
   return (
     <div className="container">
       <div className="box">
-        <p className="inside-box">January</p>
+        <p id="january">January</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />
+        </div>
       </div>
       <div className="box">
-        <p>February</p>
+        <p id="february">February</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />
+        </div>
       </div>
       <div className="box">
-        <p>March</p>
+        <p id="march">March</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />  
+        </div>
       </div>
       <div className="box">
-        <p>April</p>
+        <p id="april">April</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />
+        </div>
       </div>
       <div className="box">
-        <p>May</p>
+        <p id="may">May</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />
+        </div>
       </div>
       <div className="box">
-        <p>June</p>
+        <p id="june">June</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />
+        </div>
       </div>
       <div className="box">
-        <p>July</p>
+        <p id="july">July</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />
+        </div>
       </div>
       <div className="box">
-        <p>August</p>
+        <p id="august">August</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />
+        </div>
       </div>
       <div className="box">
-        <p>September</p>
+        <p id="september">September</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />
+        </div>
       </div>
       <div className="box">
-        <p>October</p>
+        <p id="october">October</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />
+        </div>
       </div>
       <div className="box">
-        <p>November</p>
+        <p id="november">November</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />
+        </div>
       </div>
       <div className="box">
-        <p>December</p>
+        <p id="december"> December</p>
+        <div className="iconsContainer">
+        <FontAwesomeIcon className="binIcon" icon={faTrashAlt} />
+        <FontAwesomeIcon className="penIcon" icon={faPen} />
+        </div>
       </div>
     </div>
   );

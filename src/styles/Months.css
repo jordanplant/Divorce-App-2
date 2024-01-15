@@ -69,3 +69,10 @@
   color: #fff;
 }
 
+.binIcon:hover {
+    transform: scale(1.5);
+}
+
+.penIcon:hover {
+    transform: scale(1.5);
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/months.css";
+import "../styles/Months.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { faPen } from "@fortawesome/free-solid-svg-icons";

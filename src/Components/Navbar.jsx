@@ -6,7 +6,7 @@ export default function Navbar() {
       {/* Navbar */}
       <div className="navbar">
         {/* Left side title or logo */}
-        <hl className="nav-title">Save Your Marriage</hl>
+        <h1 className="nav-title">Save Your Marriage</h1>
         {/* Right side dropdown menu */}
         {/* <!-- USER DROPDOWN --> */}
         <div className="user-dropdown">

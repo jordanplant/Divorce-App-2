@@ -1,22 +1,37 @@
-import React, { useState } from "react";
-import styles from "../styles/form.module.css";
+import React, { useState, useEffect } from "react";
+import styles from "../styles/Form.module.css";
 import Dropdown from "./Dropdown"; // Import the Dropdown component
 
-const Form = () => {
+const Form = ({ onClose }) => {
   const [formFields, setFormFields] = useState({
     EventName: "",
     date: "",
     time: "",
     type: "",
     notes: "",
-    selectedEmoji: "", // Add a field for the selected emoji
+    selectedEmoji: "",
   });
   const [eventAdded, setEventAdded] = useState(false);
+  //FADE TRANSITION
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormFields((prevFields) => ({ ...prevFields, [name]: value }));
   };
+
+  const handleClose = () => {
+    setIsVisible(false);
+    setTimeout(onClose, 300); // Delay to match the CSS transition
+  };
+
+  const containerClasses = `${styles.formContainer} ${
+    isVisible ? styles.formContainerVisible : ""
+  }`;
 
   const handleEmojiChange = (selectedEmoji) => {
     // Update the selected emoji in the form data
@@ -48,7 +63,10 @@ const Form = () => {
 
   return (
     <div>
-      <div className={styles.formContainer}>
+      <div className={containerClasses}>
+        <button className={styles.formCloseButton} onClick={handleClose}>
+          <i className="fa-solid fa-x"></i>
+        </button>
         <div className={styles.header}>Event Reminder Form</div>
         <form id="eventForm" onSubmit={handleSubmit}>
           <input
@@ -67,14 +85,17 @@ const Form = () => {
             onChange={handleChange}
             required
           />
-          <input
-            type="time"
-            label="Time"
-            className={styles.timeInput}
-            name="time"
-            value={formFields.time}
-            onChange={handleChange}
-          />
+          <div className={styles.timeContainer}>
+            <p>Select Time:</p>
+            <input
+              type="time"
+              label="Time"
+              className={styles.timeInput}
+              name="time"
+              value={formFields.time}
+              onChange={handleChange}
+            />
+          </div>
           <input
             type="text"
             placeholder="Type of event"

@@ -10,7 +10,7 @@ function Months() {
       <div className="box">
         <p id="january">January</p>
         <div className="eventContainer">
-          <h3 className="eventName">Jordan's Birthday</h3>
+          <h3 className="eventName">Jordan's Birthday 😀 </h3>
           <div className="eventDetails">
             <p className="eventDate">24/01/2024</p>
             <p className="eventTime">00:00</p>
@@ -27,7 +27,7 @@ function Months() {
       <div className="box">
         <p id="march">March</p>
         <div className="eventContainer">
-          <h3 className="eventName">Aidan's Birthday</h3>
+          <h3 className="eventName">Aidan's Birthday 😀</h3>
           <div className="eventDetails">
             <p className="eventDate">30/03/2024</p>
             <p className="eventTime">00:00</p>
@@ -56,7 +56,7 @@ function Months() {
       <div className="box">
         <p id="september">September</p>
         <div className="eventContainer">
-          <h3 className="eventName">Joseph's Birthday</h3>
+          <h3 className="eventName">Joseph's Birthday 😀</h3>
           <div className="eventDetails">
             <p className="eventDate">21/09/2024</p>
             <p className="eventTime">00:00</p>

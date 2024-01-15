@@ -6,7 +6,7 @@ export default function Navbar() {
     {/* Navbar */}
     <div className="navbar">
         {/* Left side title or logo */}
-        <hl className="nav-title">App Title or Logo</hl>
+        <hl className="nav-title">Save Your Marriage</hl>
         {/* Right side dropdown menu */}
         {/* <!-- USER DROPDOWN --> */}
                     <div className="user-dropdown">

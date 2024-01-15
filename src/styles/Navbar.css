@@ -62,8 +62,7 @@
     border-radius: 2px;
     min-width: 236px;
     transform: translateX(-82%);
-    box-shadow: 0 2px 2px 0 var(--borderboxshadow1),
-      0 1px 4px 0 var(--borderboxshadow2);
+    z-index: 1;
   }
   
   /* User Dropdown Links */

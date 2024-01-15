@@ -4,9 +4,11 @@ import styles from "../styles/Button.module.css";
 const Button = ({ onButtonClick }) => {
   return (
     <>
-      <button className={styles.addButton} onClick={onButtonClick}>
-        Add New Event
-      </button>
+      <div className={styles.buttonContainer}>
+        <button className={styles.addButton} onClick={onButtonClick}>
+          Add New Event
+        </button>
+      </div>
     </>
   );
 };

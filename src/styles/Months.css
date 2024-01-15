@@ -1,39 +1,71 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; 
-  }
-  
-  .box {
-    position: relative;
-    flex: 0 1 calc(25% - 10px); 
-    background-color: #3498db; 
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-  }
-  
-  p {
-    margin: 0; 
-    color: #ffffff; 
-  }
-  
-  .iconsContainer {
-    margin-top: auto; 
-    display: flex;
-    flex-direction: row; 
-    align-items: flex-end; 
-    gap: 20px;
-  }
-  
-  .binIcon,
-  .penIcon {
-    margin-top: 5px; 
-    cursor: pointer;
-  }
-  
- 
-  
+  margin: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* flex-wrap: wrap; */
+  gap: 10px;
+}
 
+.eventContainer {
+  width: 100%;
+  color: #000;
+  background-color: #ffffff8d;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0px;
+}
+.eventContainer h3 {
+  text-align: left;
+  /* font-size: 10px; */
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+.eventContainer p {
+  font-size: 10px;
+  margin: 0px;
+}
+
+.eventDetails {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -1em;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.iconsContainer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 0.5em;
+  margin-right: 0.5em;
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
+}
+
+.box {
+  position: relative;
+  flex: 0 1 calc(25% - 10px);
+  background-color: rgb(122, 40, 169);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* p {
+  margin: 0;
+  color: #ffffff;
+} */
+
+.binIcon,
+.penIcon {
+  cursor: pointer;
+  color: #fff;
+}

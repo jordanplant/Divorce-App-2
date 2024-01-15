@@ -13,6 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0 auto;
+  width: 680px;
+  height: 1000px;
+  background-color: aliceblue;
+  margin: 2rem;
+}
+
 /* a {
   font-weight: 500;
   color: #646cff;

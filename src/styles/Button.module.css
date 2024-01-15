@@ -1,5 +1,11 @@
 .addButton {
-  background-color: #00000050;
+  background-color: #562771;
   width: 300px;
   border-radius: 50px;
+}
+
+.buttonContainer {
+  width: 100%;
+  height: 110px;
+  background-color: #262424;
 }

@@ -1,100 +1,100 @@
-  /* N A V I G A T I O N      M E N U */
+/* N A V I G A T I O N      M E N U */
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: aqua;
-    align-items: center;
-    padding: 0.5em;
-    margin-bottom: 0.5em;
-    border-radius: 20px;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #262424;
+  align-items: center;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
 
-  .nav-title {
-    font-size: 2em;
-    font-weight: 600;
-    
-  }
-  
-  .user-dropdown {
-    border: 1px solid transparent;
-  }
-  
-    .user-dropdown-img {
-    height: 24px;
-    fill: white;
-    cursor: pointer;
-    padding: 0 12px;
-  }
+.nav-title {
+  font-size: 2em;
+  font-weight: 600;
+}
 
-  .user-text {
-    margin: 0 0;
-  }
-  
-  /* DROPDOWN TOGGLING FUNCTIONALITY */
-  /* Nav toggle section */
-  .toggle-button,
-  .sub-toggle-button {
-    user-select: none;
-  }
-  
-  /* TOGGLE CHECK DEBUG Uncomment to see checkmarks */
-  .toggle-input {
-    display: none;
-  }
-  
-  .toggled-content {
-    display: none;
-  }
-  
-  #user-toggler:checked ~ .user-toggled-content {
-    display: block;
-  }
-  
-  /* USER DROPDOWN */
-  .user-dropdown-link {
-    margin-bottom: 0;
-    font-weight: 700;
-  }
-  
-  /* User Dropdown Content */
-  .user-toggled-content {
-    position: absolute;
-    background: white;
-    border-radius: 2px;
-    min-width: 236px;
-    transform: translateX(-82%);
-    z-index: 1;
-  }
-  
-  /* User Dropdown Links */
-  .user-main-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 1em;
-  }
-  
-  .user-dropdown-link {
-    padding: 8px 16px 8px 24px;
-    font-weight: 400;
-  }
+.user-dropdown {
+  border: 1px solid transparent;
+}
 
-  .user-image {
-    border: 2px solid white;
-    height: 5em;
-    width: 5em;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    border-radius: 100%;
-    overflow: hidden;
-  }
+.user-dropdown-img {
+  height: 24px;
+  fill: white;
+  cursor: pointer;
+  padding: 0 12px;
+}
 
-  .user-image img {
-    width: 150px;
-    transform: translateX(-20%);
-  }
-  
-  .username,
-  .log-out {
-    border-bottom: 1px solid grey;
-  }
+.user-text {
+  margin: 0 0;
+}
+
+/* DROPDOWN TOGGLING FUNCTIONALITY */
+/* Nav toggle section */
+.toggle-button,
+.sub-toggle-button {
+  user-select: none;
+}
+
+/* TOGGLE CHECK DEBUG Uncomment to see checkmarks */
+.toggle-input {
+  display: none;
+}
+
+.toggled-content {
+  display: none;
+}
+
+#user-toggler:checked ~ .user-toggled-content {
+  display: block;
+}
+
+/* USER DROPDOWN */
+.user-dropdown-link {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+/* User Dropdown Content */
+.user-toggled-content {
+  position: absolute;
+  background: white;
+  border-radius: 2px;
+  min-width: 236px;
+  transform: translateX(-82%);
+  box-shadow: 0 2px 2px 0 var(--borderboxshadow1),
+    0 1px 4px 0 var(--borderboxshadow2);
+  z-index: 1;
+}
+
+/* User Dropdown Links */
+.user-main-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
+
+.user-dropdown-link {
+  padding: 8px 16px 8px 24px;
+  font-weight: 400;
+}
+
+.user-image {
+  border: 2px solid white;
+  height: 5em;
+  width: 5em;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.user-image img {
+  width: 150px;
+  transform: translateX(-20%);
+}
+
+.username,
+.log-out {
+  border-bottom: 1px solid grey;
+}

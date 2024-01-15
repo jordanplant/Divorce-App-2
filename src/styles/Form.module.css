@@ -69,6 +69,7 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 1em;
 }
 
 button:hover {
@@ -81,17 +82,24 @@ button:hover {
 }
 .timeContainer {
   display: flex;
+  /* padding: 1em; */
+}
+
+.timeContainer p {
   color: #000;
+  padding: 0.5em;
+  padding-right: 1em;
 }
 
 .timeInput {
   width: 100px;
   text-align: center;
+  color: #000 !important;
 }
 
 .emojiDropdown {
   /* all: unset; */
-  width: 200px;
+  width: 100%;
   height: 30px;
   margin: 0 auto;
   display: flex;

@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../styles/Navbar.css";
 
 export default function Navbar() {
@@ -17,6 +17,7 @@ export default function Navbar() {
                      -7 Z M 6 7 c 0 -2.8 2.2 -5 5 -5 s 5 2.2 5 5 s -2.2 5 -5 5 s -5 -2.2 -5 -5 Z m 13 15 H 3 c -0.6 0 -1 -0.4 -1 
                      -1 v -1 c 0 -2.8 2.2 -5 5 -5 h 8 c 2.8 0 5 2.2 5 5 v 1 c 0 0.6 -0.4 1 -1 1 Z"></path>
                             </svg>
+                            <p className="user-text" >User</p>
                         </label>
                         <input type="checkbox" id="user-toggler" className="toggle-input"/>
 
@@ -25,14 +26,13 @@ export default function Navbar() {
 
                             {/* <!-- User Dropdown Menu Links --> */}
                             <div className="user-main-container">
-                                <a href="#" className="user-dropdown-link messages">Messages</a>
-                                <a href="#" className="user-dropdown-link edit-avatar">Edit Avatar</a>
-                                <a href="#" className="user-dropdown-link backgrounds">Backgrounds</a>
-                                <a href="#" className="user-dropdown-link profile">Profile</a>
-                                <a href="#" className="user-dropdown-link stats">Stats</a>
-                                <a href="#" className="user-dropdown-link achievements">Achievements</a>
-                                <a href="#" className="user-dropdown-link settings">Settings</a>
-                                <a href="#" className="user-dropdown-link subscription">Subscription</a>
+                                {/* user image */}
+                                <div className="user-image">
+                                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=1443&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                {/* username */}
+                                <a href="#" className="user-dropdown-link username">Username</a>
+                                {/* logout */}
                                 <a href="#" className="user-dropdown-link log-out">Log Out</a>
                             </div>
 

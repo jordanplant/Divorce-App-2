@@ -1,10 +1,17 @@
   /* N A V I G A T I O N      M E N U */
-  .nav-menu {
-    cursor: pointer;
-    justify-self: flex-start;
-    padding: 0.25rem 0.75rem;
-    margin-left: 2rem;
-    margin-top: 0.5em;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    align-items: center;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .nav-title {
+    font-size: 2em;
+    font-weight: 600;
   }
   
   .user-dropdown {
@@ -16,7 +23,10 @@
     fill: white;
     cursor: pointer;
     padding: 0 12px;
-    margin-top: 0.5em;
+  }
+
+  .user-text {
+    margin: 0 0;
   }
   
   /* DROPDOWN TOGGLING FUNCTIONALITY */
@@ -42,7 +52,6 @@
   /* USER DROPDOWN */
   .user-dropdown-link {
     margin-bottom: 0;
-    color: var(--midgrey);
     font-weight: 700;
   }
   
@@ -52,8 +61,7 @@
     background: white;
     border-radius: 2px;
     min-width: 236px;
-    /* transform: translateX(-82%); */
-    /* top: 90%; */
+    transform: translateX(-82%);
     box-shadow: 0 2px 2px 0 var(--borderboxshadow1),
       0 1px 4px 0 var(--borderboxshadow2);
   }
@@ -62,17 +70,30 @@
   .user-main-container {
     display: flex;
     flex-direction: column;
+    padding-top: 1em;
   }
   
   .user-dropdown-link {
     padding: 8px 16px 8px 24px;
     font-weight: 400;
   }
+
+  .user-image {
+    border: 2px solid white;
+    height: 5em;
+    width: 5em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    overflow: hidden;
+  }
+
+  .user-image img {
+    width: 150px;
+    transform: translateX(-20%);
+  }
   
-  .messages,
-  .backgrounds,
-  .achievements,
-  .subscription,
+  .username,
   .log-out {
-    border-bottom: 1px solid var(--verylightgrey);
+    border-bottom: 1px solid grey;
   }

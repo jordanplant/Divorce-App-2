@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./form.css";
+import "../styles/form.css";
+import Dropdown from "./Dropdown"; // Import the Dropdown component
 
 const Form = () => {
   const [formFields, setFormFields] = useState({
@@ -8,12 +9,18 @@ const Form = () => {
     time: "",
     type: "",
     notes: "",
+    selectedEmoji: "", // Add a field for the selected emoji
   });
   const [eventAdded, setEventAdded] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormFields((prevFields) => ({ ...prevFields, [name]: value }));
+  };
+
+  const handleEmojiChange = (selectedEmoji) => {
+    // Update the selected emoji in the form data
+    setFormFields((prevFields) => ({ ...prevFields, selectedEmoji }));
   };
 
   const handleSubmit = (event) => {
@@ -29,6 +36,7 @@ const Form = () => {
       time: "",
       type: "",
       notes: "",
+      selectedEmoji: "", // Clear the selected emoji
     });
 
     // EVENT ADDED MESSAGE
@@ -82,6 +90,10 @@ const Form = () => {
             value={formFields.notes}
             onChange={handleChange}
           />
+
+          {/* Add the Dropdown component */}
+          <Dropdown onEmojiChange={handleEmojiChange} />
+
           <button type="submit">Submit</button>
         </form>
         {eventAdded && <div className="eventAdded">Event Added!</div>}

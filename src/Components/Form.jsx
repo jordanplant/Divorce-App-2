@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/form.css";
+import styles from "../styles/form.module.css";
 import Dropdown from "./Dropdown"; // Import the Dropdown component
 
 const Form = () => {
@@ -48,9 +48,8 @@ const Form = () => {
 
   return (
     <div>
-      <div>Form</div>
-      <div className="form-container">
-        <div className="header">Event Reminder Form</div>
+      <div className={styles.formContainer}>
+        <div className={styles.header}>Event Reminder Form</div>
         <form id="eventForm" onSubmit={handleSubmit}>
           <input
             type="text"
@@ -70,7 +69,8 @@ const Form = () => {
           />
           <input
             type="time"
-            placeholder="Time"
+            label="Time"
+            className={styles.timeInput}
             name="time"
             value={formFields.time}
             onChange={handleChange}
@@ -91,12 +91,13 @@ const Form = () => {
             onChange={handleChange}
           />
 
-          {/* Add the Dropdown component */}
           <Dropdown onEmojiChange={handleEmojiChange} />
 
-          <button type="submit">Submit</button>
+          <button type="submit" className={styles.submitButton}>
+            Submit
+          </button>
         </form>
-        {eventAdded && <div className="eventAdded">Event Added!</div>}
+        {eventAdded && <div className={styles.eventAdded}>Event Added!</div>}
       </div>
     </div>
   );

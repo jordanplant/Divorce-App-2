@@ -1,19 +1,39 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px
-}
-
-.box {
-    flex: 0 1 calc(25% - 10px);
-    background-color: rgb(135, 246, 255); 
-    padding: 10px;
+    gap: 10px; 
+  }
+  
+  .box {
+    position: relative;
+    flex: 0 1 calc(25% - 10px); 
+    background-color: #3498db; 
+    padding: 20px;
     box-sizing: border-box;
-}
-
-.inside-box {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  p {
+    margin: 0; 
+    color: #ffffff; 
+  }
+  
+  .iconsContainer {
+    margin-top: auto; 
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end; 
+    gap: 20px;
+  }
+  
+  .binIcon,
+  .penIcon {
+    margin-top: 5px; 
+    cursor: pointer;
+  }
+  
+ 
+  
 
